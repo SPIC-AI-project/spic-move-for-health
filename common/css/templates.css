@@ -1,0 +1,608 @@
+/* ==========================================================
+   スピック大運動会2026 共通スタイル
+   PCベース記述＋SP（max-width:768px）は差分のみ
+   見出し(h1〜h6)はタグへ直接スタイルせず、クラスで管理
+   ========================================================== */
+
+:root {
+	--navy: #3a4c85;
+	--navy-deep: #2a3768;
+	--ink: #26293d;
+	--ink-sub: #555a70;
+	--orange: #e98b4b;
+	--orange-text: #b4560f;
+	--green: #7dbb7c;
+	--blue: #2b6fae;
+	--pink: #e080a2;
+	--cream: #fff6ee;
+	--sand: #f4ece4;
+	--mist: #eef1f9;
+	--line: #e6dacd;
+	--white: #fff;
+	--radius: 16px;
+	--shadow: 0 6px 24px rgba(58, 76, 133, 0.1);
+	--header-h: 64px;
+	--section-pad: 96px;
+	--font: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: calc(var(--header-h) + 16px);
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: var(--font);
+	font-size: 16px;
+	line-height: 1.85;
+	color: var(--ink);
+	background: var(--white);
+	-webkit-font-smoothing: antialiased;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+a {
+	color: var(--navy);
+}
+
+p,
+ul,
+ol,
+dl,
+dd {
+	margin: 0;
+}
+
+ul,
+ol {
+	padding: 0;
+	list-style: none;
+}
+
+button {
+	font: inherit;
+	color: inherit;
+}
+
+:focus-visible {
+	outline: 3px solid var(--blue);
+	outline-offset: 2px;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.sp-only {
+	display: none;
+}
+
+/* ---------- header ---------- */
+.site-header {
+	position: sticky;
+	top: 0;
+	z-index: 50;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	height: var(--header-h);
+	padding: 0 32px;
+	background: rgba(255, 255, 255, 0.94);
+	border-bottom: 1px solid var(--line);
+	backdrop-filter: blur(8px);
+}
+
+.site-header__logo {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	min-width: 0;
+	cursor: pointer;
+}
+
+.site-header__logo-img {
+	width: 64px;
+	flex: none;
+}
+
+.site-header__logo-text {
+	font-size: 15px;
+	font-weight: 700;
+	color: var(--navy);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.site-header__actions {
+	display: flex;
+	gap: 10px;
+	flex: none;
+}
+
+.nav-toggle,
+.global-nav {
+	display: none;
+}
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	min-height: 44px;
+	padding: 0 22px;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1.2;
+	color: var(--white);
+	text-decoration: none;
+	background: var(--navy);
+	border: 2px solid var(--navy);
+	border-radius: 999px;
+	cursor: pointer;
+	transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+	background: var(--navy-deep);
+	border-color: var(--navy-deep);
+}
+
+.btn--ghost {
+	color: var(--navy);
+	background: var(--white);
+}
+
+.btn--ghost:hover {
+	color: var(--white);
+}
+
+.btn--small {
+	min-height: 40px;
+	padding: 0 18px;
+	font-size: 14px;
+}
+
+/* ---------- section ---------- */
+.section {
+	padding: var(--section-pad) 0;
+	scroll-margin-top: calc(8px - var(--section-pad));
+}
+
+.section--cream {
+	background: var(--cream);
+}
+
+.section--mist {
+	background: var(--mist);
+}
+
+.container {
+	width: min(1040px, 100% - 64px);
+	margin-inline: auto;
+}
+
+.eyebrow {
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.16em;
+	color: var(--orange-text);
+}
+
+.h2-title {
+	margin: 4px 0 0;
+	font-size: 34px;
+	font-weight: 800;
+	line-height: 1.4;
+	color: var(--navy);
+}
+
+.h2-title::after {
+	content: "";
+	display: block;
+	width: 96px;
+	height: 6px;
+	margin-top: 16px;
+	border-radius: 3px;
+	background: linear-gradient(90deg, var(--orange) 0 25%, var(--green) 25% 50%, var(--blue) 50% 75%, var(--pink) 75% 100%);
+}
+
+.section-lead {
+	margin-top: 24px;
+	color: var(--ink-sub);
+}
+
+/* ---------- FAQ誘導リンク（各セクション末尾） ---------- */
+.faq-guide {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px 12px;
+	margin-top: 36px;
+	padding: 16px 20px;
+	background: var(--white);
+	border: 1px dashed var(--navy);
+	border-radius: var(--radius);
+}
+
+.section--cream .faq-guide {
+	background: var(--white);
+}
+
+.faq-guide__label {
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--navy);
+}
+
+.faq-guide__link {
+	display: inline-flex;
+	align-items: center;
+	min-height: 40px;
+	padding: 0 16px;
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--navy);
+	text-decoration: none;
+	background: var(--sand);
+	border-radius: 999px;
+}
+
+.faq-guide__link:hover {
+	color: var(--white);
+	background: var(--navy);
+}
+
+.faq-guide__link::after {
+	content: "\203A";
+	margin-left: 8px;
+	font-size: 18px;
+	line-height: 1;
+}
+
+/* ---------- 追従FAQボタン ---------- */
+.fab-faq {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 60;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	min-height: 52px;
+	padding: 0 22px 0 16px;
+	font-size: 15px;
+	font-weight: 800;
+	color: var(--ink);
+	text-decoration: none;
+	background: var(--orange);
+	border-radius: 999px;
+	box-shadow: 0 6px 20px rgba(38, 41, 61, 0.28);
+	transition: opacity 0.25s, transform 0.25s;
+}
+
+.fab-faq:hover {
+	background: #f09a5f;
+}
+
+.fab-faq__mark {
+	display: inline-grid;
+	place-items: center;
+	width: 28px;
+	height: 28px;
+	font-size: 16px;
+	font-weight: 800;
+	color: var(--white);
+	background: var(--navy);
+	border-radius: 50%;
+}
+
+.fab-faq.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(12px);
+}
+
+/* ---------- footer ---------- */
+.site-footer {
+	padding: 40px 0 96px;
+	text-align: center;
+	color: var(--white);
+	background: var(--navy-deep);
+}
+
+.site-footer__logo {
+	width: 72px;
+	margin: 0 auto 12px;
+	padding: 6px 10px;
+	background: var(--white);
+	border-radius: 8px;
+}
+
+.site-footer__title {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.site-footer__copy {
+	margin-top: 8px;
+	font-size: 12px;
+	opacity: 0.85;
+}
+
+/* ---------- reveal ---------- */
+.js .reveal {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.js .reveal.is-visible {
+	opacity: 1;
+	transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	.js .reveal {
+		opacity: 1;
+		transform: none;
+		transition: none;
+	}
+
+	.fab-faq {
+		transition: none;
+	}
+}
+
+/* ==========================================================
+   SP（差分のみ）
+   ========================================================== */
+@media (max-width: 768px) {
+	:root {
+		--header-h: 56px;
+		--section-pad: 64px;
+	}
+
+	body {
+		font-size: 15px;
+	}
+
+	.sp-only {
+		display: inline;
+	}
+
+	.pc-only {
+		display: none;
+	}
+
+	.site-header {
+		padding: 0 16px;
+	}
+
+	.site-header__logo-img {
+		width: 52px;
+	}
+
+	.site-header__logo {
+		gap: 10px;
+	}
+
+	.site-header__logo-text {
+		font-size: 12px;
+		line-height: 1.3;
+		white-space: normal;
+	}
+
+	.btn--header {
+		min-height: 40px;
+		padding: 0 16px;
+		font-size: 14px;
+	}
+
+	.site-header__actions {
+		align-items: center;
+		gap: 8px;
+	}
+
+	.nav-toggle {
+		position: relative;
+		display: block;
+		width: 44px;
+		height: 44px;
+		padding: 0;
+		background: transparent;
+		border: 2px solid var(--navy);
+		border-radius: 50%;
+		cursor: pointer;
+	}
+
+	.nav-toggle__bar,
+	.nav-toggle__bar::before,
+	.nav-toggle__bar::after {
+		position: absolute;
+		left: 50%;
+		width: 18px;
+		height: 2px;
+		background: var(--navy);
+		border-radius: 1px;
+		transition: transform 0.25s, opacity 0.2s;
+	}
+
+	.nav-toggle__bar {
+		top: 50%;
+		margin: -1px 0 0 -9px;
+	}
+
+	.nav-toggle__bar::before,
+	.nav-toggle__bar::after {
+		content: "";
+		left: 0;
+	}
+
+	.nav-toggle__bar::before {
+		transform: translateY(-6px);
+	}
+
+	.nav-toggle__bar::after {
+		transform: translateY(6px);
+	}
+
+	.is-nav-open .nav-toggle__bar {
+		background: transparent;
+	}
+
+	.is-nav-open .nav-toggle__bar::before {
+		transform: rotate(45deg);
+	}
+
+	.is-nav-open .nav-toggle__bar::after {
+		transform: rotate(-45deg);
+	}
+
+	.global-nav {
+		position: fixed;
+		inset: var(--header-h) 0 0;
+		z-index: 55;
+		display: block;
+		visibility: hidden;
+		transition: visibility 0s 0.25s;
+	}
+
+	.is-nav-open .global-nav {
+		visibility: visible;
+		transition-delay: 0s;
+	}
+
+	.global-nav__overlay {
+		position: absolute;
+		inset: 0;
+		background: rgba(38, 41, 61, 0.45);
+		opacity: 0;
+		transition: opacity 0.25s;
+	}
+
+	.is-nav-open .global-nav__overlay {
+		opacity: 1;
+	}
+
+	.global-nav__panel {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		max-height: 100%;
+		padding: 8px 16px 24px;
+		overflow-y: auto;
+		background: var(--white);
+		border-bottom: 3px solid var(--orange);
+		transform: translateY(-12px);
+		opacity: 0;
+		transition: transform 0.25s, opacity 0.25s;
+	}
+
+	.is-nav-open .global-nav__panel {
+		transform: none;
+		opacity: 1;
+	}
+
+	.global-nav__link {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 52px;
+		font-size: 16px;
+		font-weight: 700;
+		color: var(--navy);
+		text-decoration: none;
+		border-bottom: 1px solid var(--line);
+	}
+
+	.global-nav__link::after {
+		content: "\203A";
+		font-size: 22px;
+		line-height: 1;
+		color: var(--orange-text);
+	}
+
+	.global-nav__label {
+		margin-top: 20px;
+		font-size: 13px;
+		font-weight: 800;
+		color: var(--orange-text);
+	}
+
+	.global-nav__cats {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		margin-top: 10px;
+	}
+
+	.global-nav__cat {
+		display: inline-flex;
+		align-items: center;
+		min-height: 44px;
+		padding: 0 16px;
+		font-size: 14px;
+		font-weight: 700;
+		color: var(--navy);
+		text-decoration: none;
+		background: var(--sand);
+		border-radius: 999px;
+	}
+
+	.is-nav-open {
+		overflow: hidden;
+	}
+
+	.is-nav-open .fab-faq {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.container {
+		width: calc(100% - 32px);
+	}
+
+	.h2-title {
+		font-size: 26px;
+	}
+
+	.faq-guide {
+		margin-top: 28px;
+		padding: 14px 16px;
+	}
+
+	.fab-faq {
+		right: 14px;
+		bottom: 14px;
+	}
+}
