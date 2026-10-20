@@ -141,7 +141,7 @@
 			chip.setAttribute('aria-pressed', String(chip.dataset.faqFilter === state.cat));
 		});
 		emptyEl.hidden = shown !== 0;
-		statusEl.textContent = shown + '件の質問を表示しています';
+		statusEl.textContent = shown + '件のご質問を表示しています';
 		updateToggleLabel();
 	}
 
