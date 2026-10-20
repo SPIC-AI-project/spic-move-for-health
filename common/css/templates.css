@@ -23,8 +23,7 @@
 	--shadow: 0 6px 24px rgba(58, 76, 133, 0.1);
 	--header-h: 64px;
 	--section-pad: 96px;
-	--font: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-	--font-en: "Cormorant Garamond", "EB Garamond", "Times New Roman", serif;
+	--font: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 *,
@@ -211,7 +210,6 @@ button {
 }
 
 .eyebrow {
-	font-family: var(--font-en);
 	font-size: 13px;
 	font-weight: 700;
 	letter-spacing: 0.16em;
