@@ -21,6 +21,7 @@
 }
 
 .hero__eyebrow {
+	font-family: var(--font-en);
 	font-size: 13px;
 	font-weight: 700;
 	letter-spacing: 0.16em;
@@ -99,6 +100,7 @@
 }
 
 .hero__count-num {
+	font-family: var(--font-en);
 	font-size: 30px;
 	font-weight: 800;
 	line-height: 1;
@@ -316,6 +318,14 @@
 	background: var(--white);
 	border: 1px solid var(--line);
 	border-radius: var(--radius);
+}
+
+.map__img {
+	display: block;
+	width: 100%;
+	max-width: 760px;
+	height: auto;
+	margin-inline: auto;
 }
 
 .map__grid {
