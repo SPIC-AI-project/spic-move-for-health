@@ -850,6 +850,73 @@
 	text-decoration-style: solid;
 }
 
+/* ---------- teams（チーム紹介） ---------- */
+.team-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 25%);
+	margin-top: 48px;
+}
+
+.team-card {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+	min-height: 320px;
+	padding: 44px 32px;
+	color: var(--ink);
+}
+
+.team-card--orange {
+	background: #f19339;
+}
+
+.team-card--green {
+	background: #82c26c;
+}
+
+.team-card--pink {
+	background: #ed85a6;
+}
+
+.team-card--blue {
+	color: var(--white);
+	background: #3574c4;
+}
+
+.team-card__color {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+	font-size: 28px;
+	font-weight: 800;
+	line-height: 1.3;
+}
+
+.team-card__color-en {
+	font-size: 13px;
+	font-weight: 800;
+	letter-spacing: 0.16em;
+}
+
+.team-card__key {
+	display: inline-block;
+	padding: 0 12px;
+	font-size: 12px;
+	font-weight: 800;
+	line-height: 24px;
+	letter-spacing: 0.08em;
+	color: inherit;
+	border: 1.5px solid currentColor;
+	border-radius: 999px;
+}
+
+.team-card__val {
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: 800;
+	line-height: 1.5;
+}
+
 /* ---------- games（競技紹介） ---------- */
 .game-grid {
 	display: grid;
@@ -865,7 +932,7 @@
 	background: var(--white);
 	border: 1px solid var(--line);
 	border-top: 6px solid var(--orange);
-	border-radius: var(--radius);
+	/* border-radius: var(--radius); */
 }
 
 .game-card__no {
@@ -1254,6 +1321,21 @@
 
 	.contact {
 		padding: 24px 16px;
+	}
+
+	.team-grid {
+		grid-template-columns: 1fr;
+		margin-top: 32px;
+	}
+
+	.team-card {
+		gap: 18px;
+		min-height: 0;
+		padding: 28px 16px;
+	}
+
+	.team-card__color {
+		font-size: 24px;
 	}
 
 	.game-grid {
