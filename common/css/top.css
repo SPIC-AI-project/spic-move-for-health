@@ -917,6 +917,13 @@
 	line-height: 1.5;
 }
 
+.team-card__note {
+	margin-top: 6px;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1.6;
+}
+
 /* ---------- games（競技紹介） ---------- */
 .game-grid {
 	display: grid;
