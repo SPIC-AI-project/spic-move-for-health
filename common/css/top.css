@@ -837,6 +837,257 @@
 	margin-top: 10px;
 }
 
+/* ---------- schedule: 競技名リンク ---------- */
+.schedule__name a {
+	color: inherit;
+	text-decoration: underline dotted;
+	text-decoration-color: var(--orange-text);
+	text-underline-offset: 5px;
+}
+
+.schedule__name a:hover {
+	color: var(--navy);
+	text-decoration-style: solid;
+}
+
+/* ---------- games（競技紹介） ---------- */
+.game-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+	margin-top: 36px;
+}
+
+.game-card {
+	display: flex;
+	flex-direction: column;
+	padding: 28px;
+	background: var(--white);
+	border: 1px solid var(--line);
+	border-top: 6px solid var(--orange);
+	border-radius: var(--radius);
+}
+
+.game-card__no {
+	font-size: 13px;
+	font-weight: 800;
+	letter-spacing: 0.1em;
+	color: var(--orange-text);
+}
+
+.game-card__title {
+	margin: 2px 0 0;
+	font-size: 22px;
+	font-weight: 800;
+	line-height: 1.4;
+	color: var(--navy);
+}
+
+.game-card__meta {
+	display: grid;
+	gap: 6px;
+	margin-top: 14px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.game-card__meta-label {
+	display: inline-block;
+	min-width: 44px;
+	margin-right: 10px;
+	padding: 0 10px;
+	font-size: 12px;
+	font-weight: 800;
+	line-height: 22px;
+	text-align: center;
+	color: var(--white);
+	background: var(--navy);
+	border-radius: 999px;
+}
+
+.game-card__rule {
+	margin-top: 14px;
+}
+
+.game-card__sub {
+	margin-top: 16px;
+	font-size: 14px;
+	font-weight: 800;
+	color: var(--navy);
+}
+
+.game-card__notes {
+	display: grid;
+	gap: 6px;
+	margin-top: 8px;
+	font-size: 15px;
+}
+
+.game-card__notes li {
+	position: relative;
+	padding-left: 18px;
+}
+
+.game-card__notes li::before {
+	content: "";
+	position: absolute;
+	left: 2px;
+	top: 0.8em;
+	width: 8px;
+	height: 8px;
+	background: var(--orange);
+	border-radius: 50%;
+}
+
+.game-card__score {
+	margin-top: auto;
+	padding: 12px 14px;
+	font-size: 14px;
+	font-weight: 700;
+	background: var(--cream);
+	border-radius: 10px;
+}
+
+.game-card__notes + .game-card__score,
+.game-card__rule + .game-card__score {
+	margin-top: 18px;
+}
+
+.game-card__score .game-card__meta-label {
+	background: var(--orange-text);
+}
+
+/* ---------- venue: 当日の動き・フロア図 ---------- */
+.venue-sub {
+	margin-top: 40px;
+}
+
+.venue-sub__title {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 800;
+	color: var(--navy);
+}
+
+.flow {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	margin-top: 16px;
+}
+
+.flow__step {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding: 16px 18px;
+	font-weight: 700;
+	line-height: 1.6;
+	background: var(--cream);
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+}
+
+.flow__step + .flow__step::before {
+	content: "\203A";
+	position: absolute;
+	left: -14px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 24px;
+	line-height: 1;
+	color: var(--orange-text);
+}
+
+.flow__num {
+	flex: none;
+	display: grid;
+	place-items: center;
+	width: 32px;
+	height: 32px;
+	font-size: 15px;
+	font-weight: 800;
+	color: var(--white);
+	background: var(--navy);
+	border-radius: 50%;
+}
+
+.floors {
+	display: grid;
+	gap: 12px;
+	margin-top: 16px;
+	padding: 20px;
+	background: var(--white);
+	border: 1px solid var(--line);
+	border-radius: var(--radius);
+}
+
+.floors__row {
+	display: grid;
+	grid-template-columns: 44px 1fr;
+	align-items: stretch;
+	gap: 10px;
+}
+
+.floors__label {
+	display: grid;
+	place-items: center;
+	font-size: 14px;
+	font-weight: 800;
+	color: var(--white);
+	background: var(--navy);
+	border-radius: 10px;
+}
+
+.floors__cells {
+	display: grid;
+	grid-template-columns: repeat(14, 1fr);
+	gap: 6px;
+}
+
+.floors__cell {
+	display: grid;
+	place-items: center;
+	min-height: 72px;
+	padding: 6px 4px;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 1.4;
+	text-align: center;
+	color: var(--ink-sub);
+	background: var(--sand);
+	border-radius: 10px;
+}
+
+.floors__cell--w3 {
+	grid-column: span 3;
+}
+
+.floors__cell--w4 {
+	grid-column: span 4;
+}
+
+.floors__cell--w7 {
+	grid-column: span 7;
+}
+
+.floors__cell--blank {
+	background: transparent;
+	border: 1px dashed var(--line);
+}
+
+.floors__cell--room {
+	color: var(--ink);
+	background: var(--orange);
+}
+
+.floors__cell--here {
+	color: var(--orange-text);
+	background: var(--cream);
+	border: 3px solid var(--orange);
+}
+
 /* ==========================================================
    SP（差分のみ）
    ========================================================== */
@@ -1003,5 +1254,48 @@
 
 	.contact {
 		padding: 24px 16px;
+	}
+
+	.game-grid {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+
+	.game-card {
+		padding: 20px 16px;
+	}
+
+	.game-card__title {
+		font-size: 20px;
+	}
+
+	.flow {
+		grid-template-columns: 1fr;
+		gap: 22px;
+	}
+
+	.flow__step + .flow__step::before {
+		left: 30px;
+		top: -22px;
+		transform: rotate(90deg);
+	}
+
+	.floors {
+		padding: 12px;
+	}
+
+	.floors__row {
+		grid-template-columns: 34px 1fr;
+		gap: 6px;
+	}
+
+	.floors__cells {
+		gap: 4px;
+	}
+
+	.floors__cell {
+		min-height: 64px;
+		padding: 4px 2px;
+		font-size: 12px;
 	}
 }

@@ -25,7 +25,7 @@
 <link rel="apple-touch-icon" href="common/img/apple-touch-icon.png">
 <script>document.documentElement.classList.add('js');</script>
 <link rel="stylesheet" href="common/css/templates.css?v=6">
-<link rel="stylesheet" href="common/css/top.css?v=5">
+<link rel="stylesheet" href="common/css/top.css?v=8">
 </head>
 <body>
 
@@ -47,6 +47,7 @@
 		<ul class="global-nav__list">
 			<li><a class="global-nav__link" href="#about">運動会について</a></li>
 			<li><a class="global-nav__link" href="#schedule">スケジュール</a></li>
+			<li><a class="global-nav__link" href="#games">競技紹介</a></li>
 			<li><a class="global-nav__link" href="#venue">会場レイアウト</a></li>
 			<li><a class="global-nav__link" href="#access">アクセス</a></li>
 			<li><a class="global-nav__link" href="#notice">注意事項</a></li>
@@ -148,16 +149,16 @@
 					<div class="schedule__row schedule__row--rest"><span class="schedule__time">9:00&#12316;10:00</span><span class="schedule__name">受付・着替え</span></div>
 					<div class="schedule__row"><span class="schedule__time">10:00&#12316;10:30</span><span class="schedule__name">開会式</span></div>
 					<div class="schedule__row"><span class="schedule__time">10:30&#12316;10:45</span><span class="schedule__name">作戦会議</span></div>
-					<div class="schedule__row"><span class="schedule__time">10:45&#12316;11:00</span><span class="schedule__name">大玉送り</span></div>
-					<div class="schedule__row"><span class="schedule__time">11:00&#12316;11:25</span><span class="schedule__name">4色玉入れ・キッズ玉入れ</span></div>
-					<div class="schedule__row"><span class="schedule__time">11:25&#12316;11:45</span><span class="schedule__name">大縄跳び</span></div>
-					<div class="schedule__row"><span class="schedule__time">11:45&#12316;12:05</span><span class="schedule__name">綱引き</span></div>
+					<div class="schedule__row"><span class="schedule__time">10:45&#12316;11:00</span><span class="schedule__name"><a href="#game-1">大玉送り</a></span></div>
+					<div class="schedule__row"><span class="schedule__time">11:00&#12316;11:25</span><span class="schedule__name"><a href="#game-2">4色玉入れ・キッズ玉入れ</a></span></div>
+					<div class="schedule__row"><span class="schedule__time">11:25&#12316;11:45</span><span class="schedule__name"><a href="#game-3">大縄跳び</a></span></div>
+					<div class="schedule__row"><span class="schedule__time">11:45&#12316;12:05</span><span class="schedule__name"><a href="#game-4">綱引き</a></span></div>
 				</div>
 				<div class="schedule__col">
 					<div class="schedule__row schedule__row--rest"><span class="schedule__time">12:05&#12316;12:50</span><span class="schedule__name">お昼休憩</span></div>
-					<div class="schedule__row"><span class="schedule__time">12:50&#12316;13:15</span><span class="schedule__name">スピックウルトラ4択クイズ</span></div>
-					<div class="schedule__row"><span class="schedule__time">13:15&#12316;13:35</span><span class="schedule__name">増殖障害物競走</span></div>
-					<div class="schedule__row"><span class="schedule__time">13:35&#12316;14:10</span><span class="schedule__name">キッズかけっこ・ガチンコリレー</span></div>
+					<div class="schedule__row"><span class="schedule__time">12:50&#12316;13:15</span><span class="schedule__name"><a href="#game-5">スピックウルトラ4択クイズ</a></span></div>
+					<div class="schedule__row"><span class="schedule__time">13:15&#12316;13:35</span><span class="schedule__name"><a href="#game-6">増殖障害物競走</a></span></div>
+					<div class="schedule__row"><span class="schedule__time">13:35&#12316;14:10</span><span class="schedule__name"><a href="#game-7">キッズかけっこ・ガチンコリレー</a></span></div>
 					<div class="schedule__row"><span class="schedule__time">14:10&#12316;14:30</span><span class="schedule__name">閉会式</span></div>
 					<div class="schedule__row schedule__row--social"><span class="schedule__time">15:15&#12316;16:15</span><span class="schedule__name">懇親会（15:15 乾杯）</span></div>
 				</div>
@@ -165,8 +166,150 @@
 
 			<div class="faq-guide">
 				<span class="faq-guide__label">当日の流れで迷ったら</span>
+				<a class="faq-guide__link" href="#games">競技の詳細</a>
 				<a class="faq-guide__link" href="#faq" data-faq-cat="day">当日の流れのFAQ</a>
 				<a class="faq-guide__link" href="#social">懇親会の詳細</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- ============ GAMES ============ -->
+	<section class="section section--mist" id="games">
+		<div class="container reveal">
+			<p class="eyebrow">GAMES</p>
+			<h2 class="h2-title">競技紹介</h2>
+			<p class="section-lead">青・ピンク・オレンジ・緑の4チームに分かれて対戦します。競技ごとの順位に応じて得点が入り、合計点で総合優勝が決まります。</p>
+
+			<div class="game-grid">
+
+				<article class="game-card" id="game-1">
+					<p class="game-card__no">第1競技</p>
+					<h3 class="game-card__title">大玉送り</h3>
+					<ul class="game-card__meta">
+						<li><span class="game-card__meta-label">時間</span>10:45&#12316;11:00（15分）</li>
+						<li><span class="game-card__meta-label">人数</span>全員</li>
+					</ul>
+					<p class="game-card__rule">各チームで列をつくり、大玉を落とさないように頭上で送ります。カラーコーンを2往復し、フラフープの中に大玉を止めたらゴール。ゴールするまでの速さを競います。</p>
+					<p class="game-card__sub">注意事項</p>
+					<ul class="game-card__notes">
+						<li>スタートの合図があるまで、大玉は持ちあげないでください（触るのはOKです）。</li>
+						<li>大玉を落としたら、落ちた場所からやり直しです。</li>
+						<li>カラーコーンの折り返しは、必ず時計回りです。</li>
+						<li>お子様は、スタート時（大玉を持ちあげるとき）のみ参加できます。</li>
+					</ul>
+					<p class="game-card__score"><span class="game-card__meta-label">得点</span>1位 100点／2位 80点／3位 70点／4位 60点</p>
+				</article>
+
+				<article class="game-card" id="game-2">
+					<p class="game-card__no">第2競技</p>
+					<h3 class="game-card__title">4色玉入れ・キッズ玉入れ</h3>
+					<ul class="game-card__meta">
+						<li><span class="game-card__meta-label">時間</span>11:00&#12316;11:25（25分）</li>
+						<li><span class="game-card__meta-label">人数</span>全員</li>
+					</ul>
+					<p class="game-card__rule">制限時間は90秒。カゴに入れた玉の数を競います。玉の色は、青・ピンク・オレンジ・緑の4色。4色が1個ずつそろって、はじめて1ポイントです（栄養素をバランスよくとるイメージ）。カゴの中で足りない色を見極めて、バランスよく投げ入れましょう。</p>
+					<p class="game-card__rule">キッズの部は、背の高さに応じてカゴの高さを変えて行います。</p>
+					<p class="game-card__sub">注意事項</p>
+					<ul class="game-card__notes">
+						<li>競技開始の合図まで円の外で待ち、中にある玉には触れないでください。</li>
+						<li>道具を使って玉を投げるのは禁止です。</li>
+						<li>カゴに登るのは禁止です。</li>
+						<li>肩車などをして、高さを出して投げるのは禁止です。</li>
+						<li>他のチームの邪魔をするのは禁止です。</li>
+					</ul>
+					<p class="game-card__score"><span class="game-card__meta-label">得点</span>1位 100点／2位 80点／3位 70点／4位 60点（キッズの部は得点なし）</p>
+				</article>
+
+				<article class="game-card" id="game-3">
+					<p class="game-card__no">第3競技</p>
+					<h3 class="game-card__title">大縄跳び</h3>
+					<ul class="game-card__meta">
+						<li><span class="game-card__meta-label">時間</span>11:25&#12316;11:45（20分）</li>
+						<li><span class="game-card__meta-label">人数</span>1チーム25名（跳び役18名・回し役2名・交代要員5名）</li>
+					</ul>
+					<p class="game-card__rule">全員が縄に入った状態からスタートします。制限時間5分の間に跳んだ合計回数（連続の最高回数ではありません）を競います。制限時間内は、何度でもチャレンジできます。練習時間は2分間。交代要員の5名は、いつでも交代OKです。</p>
+					<p class="game-card__sub">注意事項</p>
+					<ul class="game-card__notes">
+						<li>練習時間以外の練習は禁止です。</li>
+						<li>制限時間が終了したら、跳んでいる途中でも、そこで終了です。</li>
+						<li>並び方（1列、2列など）は自由です。</li>
+					</ul>
+					<p class="game-card__score"><span class="game-card__meta-label">得点</span>1位 100点／2位 80点／3位 70点／4位 60点</p>
+				</article>
+
+				<article class="game-card" id="game-4">
+					<p class="game-card__no">第4競技</p>
+					<h3 class="game-card__title">綱引き</h3>
+					<ul class="game-card__meta">
+						<li><span class="game-card__meta-label">時間</span>11:45&#12316;12:05（20分）</li>
+						<li><span class="game-card__meta-label">人数</span>1チーム15名（4チームのトーナメント）</li>
+					</ul>
+					<p class="game-card__rule">制限時間30秒の1本勝負。自陣に2m以上引き込むか、30秒経過した時点で、より綱を引いていたチームの勝ちです。</p>
+					<p class="game-card__sub">注意事項</p>
+					<ul class="game-card__notes">
+						<li>人数が揃ったチームは、座って待機してください。</li>
+						<li>スタートの笛が鳴るまで、綱を引かないでください（触るのはOKです）。</li>
+						<li>体に綱を巻き付けるのは禁止です。</li>
+					</ul>
+					<p class="game-card__score"><span class="game-card__meta-label">得点</span>1位 100点／2位 80点／3位 70点／4位 60点</p>
+				</article>
+
+				<article class="game-card" id="game-5">
+					<p class="game-card__no">第5競技</p>
+					<h3 class="game-card__title">スピックウルトラ4択クイズ</h3>
+					<ul class="game-card__meta">
+						<li><span class="game-card__meta-label">時間</span>12:50&#12316;13:15（25分）</li>
+						<li><span class="game-card__meta-label">人数</span>全員</li>
+					</ul>
+					<p class="game-card__rule">4択クイズに挑戦します。シンキングタイム（30秒）の間に、答えだと思う回答スペースへ移動。間違えたら、すみやかに応援ブースへ戻ります。最後まで残っていた人数で、順位が決まります。</p>
+					<p class="game-card__sub">注意事項</p>
+					<ul class="game-card__notes">
+						<li>応援ブースから、回答中の選手に答えを教えるのは禁止です。</li>
+						<li>携帯電話などで答えを調べるのは禁止です。</li>
+						<li>シンキングタイムが終わったあとの移動はできません。</li>
+					</ul>
+					<p class="game-card__score"><span class="game-card__meta-label">得点</span>1位 100点／2位 80点／3位 70点／4位 60点</p>
+				</article>
+
+				<article class="game-card" id="game-6">
+					<p class="game-card__no">第6競技</p>
+					<h3 class="game-card__title">増殖障害物競走</h3>
+					<ul class="game-card__meta">
+						<li><span class="game-card__meta-label">時間</span>13:15&#12316;13:35（20分）</li>
+						<li><span class="game-card__meta-label">人数</span>1チーム15名</li>
+					</ul>
+					<p class="game-card__rule">タスキをつなぐたびに、走る人数が増えていく障害物リレー。1人から始まり、5人まで人数を増やしながら、ゴールをめざします。</p>
+					<p class="game-card__sub">注意事項</p>
+					<ul class="game-card__notes">
+						<li>障害物の内容は、当日のお楽しみです。</li>
+					</ul>
+					<p class="game-card__score"><span class="game-card__meta-label">得点</span>1位 100点／2位 80点／3位 70点／4位 60点</p>
+				</article>
+
+				<article class="game-card" id="game-7">
+					<p class="game-card__no">第7競技</p>
+					<h3 class="game-card__title">キッズかけっこ・ガチンコリレー</h3>
+					<ul class="game-card__meta">
+						<li><span class="game-card__meta-label">時間</span>13:35&#12316;14:10（35分）</li>
+					</ul>
+					<p class="game-card__sub">キッズかけっこ</p>
+					<p class="game-card__rule">お子様向けの、直線のかけっこです。チーム対抗ではなく、得点はありません。対象年齢などの詳細は現在確認中です。</p>
+					<p class="game-card__sub">ガチンコリレー（1チーム10名）</p>
+					<p class="game-card__rule">トラックをバトンでつなぎ、アンカーがゴールするまでの速さを競います。走るのは、全員ひとり1周です。</p>
+					<ul class="game-card__notes">
+						<li>バトンは、バトンゾーンの中で受け渡してください。</li>
+						<li>走り終わった人は、次の走者の妨げにならないよう、トラックの内側で待ってください。</li>
+						<li>同じチームのフライングが2回になると、失格です。</li>
+					</ul>
+					<p class="game-card__score"><span class="game-card__meta-label">得点</span>ガチンコリレーのみ：1位 150点／2位 100点／3位 80点／4位 60点</p>
+				</article>
+
+			</div>
+
+			<div class="faq-guide">
+				<span class="faq-guide__label">競技について</span>
+				<a class="faq-guide__link" href="#faq" data-faq-cat="day">当日の流れのFAQ</a>
+				<a class="faq-guide__link" href="#faq" data-faq-cat="family">ご家族・お子様のFAQ</a>
 			</div>
 		</div>
 	</section>
@@ -188,19 +331,55 @@
 					<div class="map__cell map__cell--wcf">女性用<br>お手洗い</div>
 					<div class="map__cell map__cell--recep">受付</div>
 					<div class="map__cell map__cell--kids">キッズ<br>スペース</div>
-					<div class="map__cell map__cell--tasting">試飲<br>ブース</div>
+					<div class="map__cell map__cell--tasting">展示・<br>体験<br>ブース</div>
 					<div class="map__booths">
-						<span class="map__booth map__booth--orange">色別<br>応援ブース</span>
-						<span class="map__booth map__booth--green">色別<br>応援ブース</span>
-						<span class="map__booth map__booth--blue">色別<br>応援ブース</span>
-						<span class="map__booth map__booth--pink">色別<br>応援ブース</span>
+						<span class="map__booth map__booth--orange">色別<br>応援<br>ブース</span>
+						<span class="map__booth map__booth--green">色別<br>応援<br>ブース</span>
+						<span class="map__booth map__booth--blue">色別<br>応援<br>ブース</span>
+						<span class="map__booth map__booth--pink">色別<br>応援<br>ブース</span>
 					</div>
 				</div>
 				<ul class="map__legend">
-					<li>受付、クローク、キッズスペース、試飲ブース、色別応援ブースは展示ホールC内にあります。</li>
+					<li>受付、クローク、キッズスペース、展示ブース、体験ブース、色別応援ブースは展示ホールC内にあります。展示ブースと体験ブースは、同じ場所にあります。</li>
 					<li>救護本部とステージは、会場奥（図の上側）にあります。</li>
-					<li>更衣室（男性用・女性用）は M2F にあります。男女共用のお手洗いは受付のそばにあります。</li>
+					<li>更衣室（男性用・女性用）は M2F にあります。女性用は CM1・CM2、男性用は CM3・CM4 です。男女共用のお手洗いは受付のそばにあります。</li>
 					<li>懇親会会場の「アネックスホール」は 2F です。</li>
+				</ul>
+			</div>
+
+			<div class="venue-sub">
+				<h3 class="venue-sub__title">当日の動き</h3>
+				<ol class="flow">
+					<li class="flow__step"><span class="flow__num">1</span><span class="flow__text">受付<br>（展示ホールC）</span></li>
+					<li class="flow__step"><span class="flow__num">2</span><span class="flow__text">更衣室で着替え<br>（M2F）</span></li>
+					<li class="flow__step"><span class="flow__num">3</span><span class="flow__text">チームの<br>応援ブースへ</span></li>
+				</ol>
+			</div>
+
+			<div class="venue-sub">
+				<h3 class="venue-sub__title">フロア図（イメージ）</h3>
+				<div class="floors" role="img" aria-label="フロア図。1Fに展示ホールDからAが並び、更衣室（CM1からCM4）は展示ホールCの近くのM2Fにあります。内容は下の説明にも記載しています。">
+					<div class="floors__row">
+						<span class="floors__label">M2F</span>
+						<div class="floors__cells">
+							<span class="floors__cell floors__cell--blank floors__cell--w4">その他の諸室</span>
+							<span class="floors__cell floors__cell--room floors__cell--w3">更衣室<br>CM1&#12316;4</span>
+							<span class="floors__cell floors__cell--blank floors__cell--w7">その他の諸室</span>
+						</div>
+					</div>
+					<div class="floors__row">
+						<span class="floors__label">1F</span>
+						<div class="floors__cells">
+							<span class="floors__cell floors__cell--hall floors__cell--w4">ホールD</span>
+							<span class="floors__cell floors__cell--hall floors__cell--here floors__cell--w3">展示<br>ホールC</span>
+							<span class="floors__cell floors__cell--hall floors__cell--w4">ホールB</span>
+							<span class="floors__cell floors__cell--hall floors__cell--w3">ホールA</span>
+						</div>
+					</div>
+				</div>
+				<ul class="map__legend">
+					<li>更衣室は、展示ホールCの近くのM2Fにあります。</li>
+					<li>図は位置関係を示すイメージです。実際の広さや形とは異なります。</li>
 				</ul>
 			</div>
 
@@ -344,8 +523,9 @@
 					<div class="faq-item__a"><div class="faq-item__a-body"><p>お昼休憩は12:05&#12316;12:50を予定しています。<br>お弁当は、大人・お子様共通のメニューを1種類ご用意いたします。<br>小学生以上の方には、お一人につき1個、未就学のお子様には、ご希望に応じてご用意いたします。<br>未就学のお子様のお弁当をご希望の方は、当日お申し出ください。<br>※お子様専用のメニューはございません。</p></div></div>
 				</details>
 				<details class="faq-item" id="q-teams" data-cat="day" data-tbd>
-					<summary class="faq-item__q"><span class="faq-item__mark">Q</span><span class="faq-item__text">4色のチームはどうやって決まりますか？</span><span class="faq-item__label">当日の流れ</span><span class="faq-item__tbd">確認中</span></summary>
-					<div class="faq-item__a"><div class="faq-item__a-body"><p>会場には、色ごとの応援ブースを設けています。チームの決め方については現在確認中です。詳細が決まり次第、本ページでご案内いたします。</p></div></div>
+					<summary class="faq-item__q"><span class="faq-item__mark">Q</span><span class="faq-item__text">4色のチームはどうやって決まりますか？</span><span class="faq-item__label">当日の流れ</span><!--<span class="faq-item__tbd">確認中</span>--></summary>
+					<div class="faq-item__a"><div class="faq-item__a-body"><p>会場には、色ごとの応援ブースを設けています。<br>
+					パートナー様のチーム分けに関しましては、当日発表する予定です。</p></div></div>
 				</details>
 				<details class="faq-item" id="q-after" data-cat="day">
 					<summary class="faq-item__q"><span class="faq-item__mark">Q</span><span class="faq-item__text">閉会式のあとは何かありますか？</span><span class="faq-item__label">当日の流れ</span></summary>
@@ -404,8 +584,8 @@
 					<div class="faq-item__a"><div class="faq-item__a-body"><p>会場内にお手洗いがございます。<br>詳しい場所は「<a href="#venue">会場レイアウト</a>」をご確認ください。</p></div></div>
 				</details>
 				<details class="faq-item" id="q-tasting" data-cat="venue">
-					<summary class="faq-item__q"><span class="faq-item__mark">Q</span><span class="faq-item__text">試飲ブースとは何ですか？</span><span class="faq-item__label">会場・設備</span></summary>
-					<div class="faq-item__a"><div class="faq-item__a-body"><p>会場内に試飲ブースを設けています。詳しい場所は「<a href="#venue">会場レイアウト</a>」をご確認ください。</p></div></div>
+					<summary class="faq-item__q"><span class="faq-item__mark">Q</span><span class="faq-item__text">展示ブース・体験ブースとは何ですか？</span><span class="faq-item__label">会場・設備</span></summary>
+					<div class="faq-item__a"><div class="faq-item__a-body"><p>会場内に「展示ブース」と「体験ブース」を設けています。2つのブースは、同じ場所にあります。<br>詳しい場所は「<a href="#venue">会場レイアウト</a>」をご確認ください。</p></div></div>
 				</details>
 				<details class="faq-item" id="q-cheering" data-cat="venue">
 					<summary class="faq-item__q"><span class="faq-item__mark">Q</span><span class="faq-item__text">色別応援ブースとは何ですか？</span><span class="faq-item__label">会場・設備</span></summary>
