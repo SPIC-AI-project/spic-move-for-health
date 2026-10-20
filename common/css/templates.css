@@ -249,7 +249,7 @@ button {
 	padding: 16px 20px;
 	background: var(--white);
 	border: 1px dashed var(--navy);
-	border-radius: var(--radius);
+	/* border-radius: var(--radius); */
 }
 
 .section--cream .faq-guide {
