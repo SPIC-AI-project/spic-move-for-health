@@ -23,7 +23,7 @@
 	--shadow: 0 6px 24px rgba(58, 76, 133, 0.1);
 	--header-h: 64px;
 	--section-pad: 96px;
-	--font: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", "Meiryo", sans-serif;
+	--font: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", "Meiryo", sans-serif;
 }
 
 *,
@@ -129,7 +129,7 @@ button {
 
 .site-header__logo-text {
 	font-size: 15px;
-	font-weight: 700;
+	font-weight: 600;
 	color: var(--navy);
 	white-space: nowrap;
 	overflow: hidden;
@@ -155,7 +155,7 @@ button {
 	min-height: 44px;
 	padding: 0 22px;
 	font-size: 15px;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 1.2;
 	color: var(--white);
 	text-decoration: none;
@@ -211,7 +211,7 @@ button {
 
 .eyebrow {
 	font-size: 13px;
-	font-weight: 700;
+	font-weight: 600;
 	letter-spacing: 0.16em;
 	color: var(--orange-text);
 }
@@ -219,7 +219,7 @@ button {
 .h2-title {
 	margin: 4px 0 0;
 	font-size: 34px;
-	font-weight: 800;
+	font-weight: 700;
 	line-height: 1.4;
 	color: var(--navy);
 }
@@ -258,7 +258,7 @@ button {
 
 .faq-guide__label {
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 600;
 	color: var(--navy);
 }
 
@@ -268,7 +268,7 @@ button {
 	min-height: 40px;
 	padding: 0 16px;
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 600;
 	color: var(--navy);
 	text-decoration: none;
 	background: var(--sand);
@@ -299,7 +299,7 @@ button {
 	min-height: 52px;
 	padding: 0 22px 0 16px;
 	font-size: 15px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--ink);
 	text-decoration: none;
 	background: var(--orange);
@@ -318,7 +318,7 @@ button {
 	width: 28px;
 	height: 28px;
 	font-size: 16px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--white);
 	background: var(--navy);
 	border-radius: 50%;
@@ -349,7 +349,7 @@ button {
 .site-footer__title {
 	margin: 0;
 	font-size: 15px;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .site-footer__copy {
@@ -543,7 +543,7 @@ button {
 		justify-content: space-between;
 		min-height: 52px;
 		font-size: 16px;
-		font-weight: 700;
+		font-weight: 600;
 		color: var(--navy);
 		text-decoration: none;
 		border-bottom: 1px solid var(--line);
@@ -559,7 +559,7 @@ button {
 	.global-nav__label {
 		margin-top: 20px;
 		font-size: 13px;
-		font-weight: 800;
+		font-weight: 700;
 		color: var(--orange-text);
 	}
 
@@ -576,7 +576,7 @@ button {
 		min-height: 44px;
 		padding: 0 16px;
 		font-size: 14px;
-		font-weight: 700;
+		font-weight: 600;
 		color: var(--navy);
 		text-decoration: none;
 		background: var(--sand);

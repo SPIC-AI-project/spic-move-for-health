@@ -22,7 +22,7 @@
 
 .hero__eyebrow {
 	font-size: 13px;
-	font-weight: 700;
+	font-weight: 600;
 	letter-spacing: 0.16em;
 	color: var(--orange-text);
 }
@@ -30,7 +30,7 @@
 .hero__title {
 	margin: 8px 0 0;
 	font-size: 52px;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 1.25;
 	color: var(--navy);
 }
@@ -46,7 +46,7 @@
 .hero__subtitle {
 	margin-top: 16px;
 	font-size: 18px;
-	font-weight: 700;
+	font-weight: 600;
 	color: var(--ink);
 }
 
@@ -62,7 +62,7 @@
 	align-items: baseline;
 	gap: 4px 14px;
 	font-size: 20px;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 1.5;
 }
 
@@ -71,7 +71,7 @@
 	min-width: 76px;
 	padding: 2px 12px;
 	font-size: 12px;
-	font-weight: 800;
+	font-weight: 700;
 	letter-spacing: 0.12em;
 	text-align: center;
 	color: var(--white);
@@ -92,7 +92,7 @@
 	margin-top: 24px;
 	padding: 8px 20px;
 	font-size: 15px;
-	font-weight: 700;
+	font-weight: 600;
 	background: var(--cream);
 	border: 1px solid var(--line);
 	border-radius: 999px;
@@ -100,7 +100,7 @@
 
 .hero__count-num {
 	font-size: 30px;
-	font-weight: 800;
+	font-weight: 700;
 	line-height: 1;
 	color: var(--orange-text);
 }
@@ -126,7 +126,7 @@
 .hero__quick-title {
 	margin: 0;
 	font-size: 15px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--navy);
 }
 
@@ -143,7 +143,7 @@
 	min-height: 44px;
 	padding: 0 18px;
 	font-size: 15px;
-	font-weight: 700;
+	font-weight: 600;
 	color: var(--navy);
 	text-decoration: none;
 	background: var(--cream);
@@ -160,7 +160,7 @@
 	height: 22px;
 	margin-right: 10px;
 	font-size: 12px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--white);
 	background: var(--navy);
 	border-radius: 50%;
@@ -197,7 +197,7 @@
 
 .hero__update-summary {
 	cursor: pointer;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .hero__update-list {
@@ -208,7 +208,7 @@
 .about__catch {
 	margin: 24px 0 0;
 	font-size: 26px;
-	font-weight: 800;
+	font-weight: 700;
 	line-height: 1.6;
 	color: var(--navy);
 }
@@ -216,7 +216,7 @@
 .about__en {
 	margin-top: 4px;
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 600;
 	letter-spacing: 0.08em;
 	color: var(--orange-text);
 }
@@ -244,7 +244,7 @@
 }
 
 .overview__term {
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--navy);
 	background: var(--sand);
 }
@@ -284,13 +284,13 @@
 
 .schedule__time {
 	font-size: 15px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--orange-text);
 	white-space: nowrap;
 }
 
 .schedule__name {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .schedule__row--rest {
@@ -347,7 +347,7 @@
 	min-height: 64px;
 	padding: 8px;
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 1.4;
 	text-align: center;
 	color: var(--ink);
@@ -402,7 +402,7 @@
 	place-items: center;
 	min-height: 200px;
 	font-size: 24px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--orange-text);
 	background: var(--cream);
 	border: 3px solid var(--orange);
@@ -422,7 +422,7 @@
 	min-height: 64px;
 	padding: 4px;
 	font-size: 12px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--ink);
 	border-radius: 10px;
 }
@@ -494,7 +494,7 @@
 .access__card-title {
 	margin: 0 0 12px;
 	font-size: 18px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--navy);
 }
 
@@ -529,7 +529,7 @@
 	margin-right: 8px;
 	padding: 0 10px;
 	font-size: 13px;
-	font-weight: 700;
+	font-weight: 600;
 	color: var(--white);
 	background: var(--navy);
 	border-radius: 999px;
@@ -543,7 +543,7 @@
 .notice-group__title {
 	margin: 0;
 	font-size: 20px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--navy);
 }
 
@@ -559,7 +559,7 @@
 	gap: 16px;
 	align-items: flex-start;
 	padding: 18px 22px;
-	font-weight: 700;
+	font-weight: 600;
 	background: var(--white);
 	border-radius: var(--radius);
 	border: 1px solid var(--line);
@@ -572,7 +572,7 @@
 	width: 32px;
 	height: 32px;
 	font-size: 15px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--ink);
 	background: var(--orange);
 	border-radius: 50%;
@@ -617,7 +617,7 @@
 	min-height: 44px;
 	padding: 0 18px;
 	font-size: 15px;
-	font-weight: 700;
+	font-weight: 600;
 	color: var(--navy);
 	background: var(--white);
 	border: 2px solid var(--navy);
@@ -639,7 +639,7 @@
 	min-width: 24px;
 	padding: 0 6px;
 	font-size: 12px;
-	font-weight: 800;
+	font-weight: 700;
 	line-height: 22px;
 	text-align: center;
 	color: var(--ink);
@@ -655,7 +655,7 @@
 	gap: 8px 16px;
 	margin-top: 22px;
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 600;
 	color: var(--ink-sub);
 }
 
@@ -663,7 +663,7 @@
 	min-height: 40px;
 	padding: 0 16px;
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 600;
 	color: var(--navy);
 	background: transparent;
 	border: 1px solid var(--navy);
@@ -718,7 +718,7 @@
 	gap: 14px;
 	padding: 16px 52px 16px 20px;
 	position: relative;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 1.6;
 	list-style: none;
 	cursor: pointer;
@@ -752,7 +752,7 @@
 	width: 30px;
 	height: 30px;
 	font-size: 14px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--white);
 	background: var(--navy);
 	border-radius: 50%;
@@ -762,7 +762,7 @@
 	flex: none;
 	padding: 0 10px;
 	font-size: 12px;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 22px;
 	color: var(--navy);
 	background: var(--sand);
@@ -779,7 +779,7 @@
 	flex: none;
 	padding: 0 10px;
 	font-size: 12px;
-	font-weight: 800;
+	font-weight: 700;
 	line-height: 22px;
 	color: var(--ink);
 	background: var(--orange);
@@ -800,7 +800,7 @@
 	width: 30px;
 	height: 30px;
 	font-size: 14px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--ink);
 	background: var(--orange);
 	border-radius: 50%;
@@ -817,7 +817,7 @@
 }
 
 .faq-item__a-body a {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .faq-empty {
@@ -835,7 +835,7 @@
 
 .faq-empty__title {
 	margin: 0;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--navy);
 }
 
@@ -852,7 +852,7 @@
 .contact__title {
 	margin: 0;
 	font-size: 20px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--navy);
 }
 
@@ -911,13 +911,13 @@
 	align-items: baseline;
 	gap: 10px;
 	font-size: 28px;
-	font-weight: 800;
+	font-weight: 700;
 	line-height: 1.3;
 }
 
 .team-card__color-en {
 	font-size: 13px;
-	font-weight: 800;
+	font-weight: 700;
 	letter-spacing: 0.16em;
 }
 
@@ -925,7 +925,7 @@
 	display: inline-block;
 	padding: 0 12px;
 	font-size: 12px;
-	font-weight: 800;
+	font-weight: 700;
 	line-height: 24px;
 	letter-spacing: 0.08em;
 	color: inherit;
@@ -936,14 +936,14 @@
 .team-card__val {
 	margin-top: 10px;
 	font-size: 20px;
-	font-weight: 800;
+	font-weight: 700;
 	line-height: 1.5;
 }
 
 .team-card__note {
 	margin-top: 6px;
 	font-size: 13px;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 1.6;
 }
 
@@ -967,7 +967,7 @@
 
 .game-card__no {
 	font-size: 13px;
-	font-weight: 800;
+	font-weight: 700;
 	letter-spacing: 0.1em;
 	color: var(--orange-text);
 }
@@ -975,7 +975,7 @@
 .game-card__title {
 	margin: 2px 0 0;
 	font-size: 22px;
-	font-weight: 800;
+	font-weight: 700;
 	line-height: 1.4;
 	color: var(--navy);
 }
@@ -985,7 +985,7 @@
 	gap: 6px;
 	margin-top: 14px;
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .game-card__meta-label {
@@ -994,7 +994,7 @@
 	margin-right: 10px;
 	padding: 0 10px;
 	font-size: 12px;
-	font-weight: 800;
+	font-weight: 700;
 	line-height: 22px;
 	text-align: center;
 	color: var(--white);
@@ -1009,7 +1009,7 @@
 .game-card__sub {
 	margin-top: 16px;
 	font-size: 14px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--navy);
 }
 
@@ -1040,7 +1040,7 @@
 	margin-top: auto;
 	padding: 12px 14px;
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 600;
 	background: var(--cream);
 	border-radius: 10px;
 }
@@ -1062,7 +1062,7 @@
 .venue-sub__title {
 	margin: 0;
 	font-size: 20px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--navy);
 }
 
@@ -1079,7 +1079,7 @@
 	align-items: center;
 	gap: 14px;
 	padding: 16px 18px;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 1.6;
 	background: var(--cream);
 	border: 1px solid var(--line);
@@ -1104,7 +1104,7 @@
 	width: 32px;
 	height: 32px;
 	font-size: 15px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--white);
 	background: var(--navy);
 	border-radius: 50%;
@@ -1131,7 +1131,7 @@
 	display: grid;
 	place-items: center;
 	font-size: 14px;
-	font-weight: 800;
+	font-weight: 700;
 	color: var(--white);
 	background: var(--navy);
 	border-radius: 10px;
@@ -1149,7 +1149,7 @@
 	min-height: 72px;
 	padding: 6px 4px;
 	font-size: 13px;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 1.4;
 	text-align: center;
 	color: var(--ink-sub);
@@ -1441,7 +1441,7 @@
 		display: block;
 		margin-top: 8px;
 		font-size: 12px;
-		font-weight: 700;
+		font-weight: 600;
 		text-align: center;
 		color: var(--ink-sub);
 	}
