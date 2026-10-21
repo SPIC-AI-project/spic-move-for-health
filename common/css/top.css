@@ -532,11 +532,22 @@
 }
 
 /* ---------- notice ---------- */
+.notice-group {
+	margin-top: 36px;
+}
+
+.notice-group__title {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 800;
+	color: var(--navy);
+}
+
 .notice {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 14px;
-	margin-top: 32px;
+	margin-top: 16px;
 }
 
 .notice__item {
