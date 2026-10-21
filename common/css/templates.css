@@ -142,9 +142,170 @@ button {
 	flex: none;
 }
 
-.nav-toggle,
+/* ---------- メニュー（PC・SP共通）。SPは下のmedia内で差分のみ上書き ---------- */
+.nav-toggle {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	min-height: 40px;
+	padding: 0 18px 0 42px;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--navy);
+	background: transparent;
+	border: 2px solid var(--navy);
+	border-radius: 999px;
+	cursor: pointer;
+}
+
+.nav-toggle:hover {
+	background: var(--sand);
+}
+
+.nav-toggle__bar,
+.nav-toggle__bar::before,
+.nav-toggle__bar::after {
+	position: absolute;
+	left: 14px;
+	width: 18px;
+	height: 2px;
+	background: var(--navy);
+	border-radius: 1px;
+	transition: transform 0.25s, opacity 0.2s;
+}
+
+.nav-toggle__bar {
+	top: 50%;
+	margin-top: -1px;
+}
+
+.nav-toggle__bar::before,
+.nav-toggle__bar::after {
+	content: "";
+	left: 0;
+}
+
+.nav-toggle__bar::before {
+	transform: translateY(-6px);
+}
+
+.nav-toggle__bar::after {
+	transform: translateY(6px);
+}
+
+.is-nav-open .nav-toggle__bar {
+	background: transparent;
+}
+
+.is-nav-open .nav-toggle__bar::before {
+	transform: rotate(45deg);
+}
+
+.is-nav-open .nav-toggle__bar::after {
+	transform: rotate(-45deg);
+}
+
 .global-nav {
-	display: none;
+	position: fixed;
+	inset: var(--header-h) 0 0;
+	z-index: 55;
+	display: block;
+	visibility: hidden;
+	transition: visibility 0s 0.25s;
+}
+
+.is-nav-open .global-nav {
+	visibility: visible;
+	transition-delay: 0s;
+}
+
+.global-nav__overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(38, 41, 61, 0.45);
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+
+.is-nav-open .global-nav__overlay {
+	opacity: 1;
+}
+
+.global-nav__panel {
+	position: absolute;
+	top: 0;
+	right: 32px;
+	width: min(420px, calc(100% - 64px));
+	max-height: 100%;
+	padding: 8px 20px 24px;
+	overflow-y: auto;
+	background: var(--white);
+	border-bottom: 3px solid var(--orange);
+	border-radius: 0 0 var(--radius) var(--radius);
+	box-shadow: var(--shadow);
+	transform: translateY(-12px);
+	opacity: 0;
+	transition: transform 0.25s, opacity 0.25s;
+}
+
+.is-nav-open .global-nav__panel {
+	transform: none;
+	opacity: 1;
+}
+
+.global-nav__link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 52px;
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--navy);
+	text-decoration: none;
+	border-bottom: 1px solid var(--line);
+}
+
+.global-nav__link:hover {
+	background: var(--cream);
+}
+
+.global-nav__link::after {
+	content: "\203A";
+	font-size: 22px;
+	line-height: 1;
+	color: var(--orange-text);
+}
+
+.global-nav__label {
+	margin-top: 20px;
+	font-size: 13px;
+	font-weight: 700;
+	color: var(--orange-text);
+}
+
+.global-nav__cats {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 10px;
+}
+
+.global-nav__cat {
+	display: inline-flex;
+	align-items: center;
+	min-height: 44px;
+	padding: 0 16px;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--navy);
+	text-decoration: none;
+	background: var(--sand);
+	border-radius: 999px;
+}
+
+.is-nav-open .fab-faq {
+	opacity: 0;
+	pointer-events: none;
 }
 
 .btn {
@@ -437,159 +598,29 @@ button {
 	}
 
 	.nav-toggle {
-		position: relative;
 		display: block;
 		width: 44px;
 		height: 44px;
 		padding: 0;
-		background: transparent;
-		border: 2px solid var(--navy);
 		border-radius: 50%;
-		cursor: pointer;
-	}
-
-	.nav-toggle__bar,
-	.nav-toggle__bar::before,
-	.nav-toggle__bar::after {
-		position: absolute;
-		left: 50%;
-		width: 18px;
-		height: 2px;
-		background: var(--navy);
-		border-radius: 1px;
-		transition: transform 0.25s, opacity 0.2s;
 	}
 
 	.nav-toggle__bar {
-		top: 50%;
+		left: 50%;
 		margin: -1px 0 0 -9px;
 	}
 
-	.nav-toggle__bar::before,
-	.nav-toggle__bar::after {
-		content: "";
-		left: 0;
-	}
-
-	.nav-toggle__bar::before {
-		transform: translateY(-6px);
-	}
-
-	.nav-toggle__bar::after {
-		transform: translateY(6px);
-	}
-
-	.is-nav-open .nav-toggle__bar {
-		background: transparent;
-	}
-
-	.is-nav-open .nav-toggle__bar::before {
-		transform: rotate(45deg);
-	}
-
-	.is-nav-open .nav-toggle__bar::after {
-		transform: rotate(-45deg);
-	}
-
-	.global-nav {
-		position: fixed;
-		inset: var(--header-h) 0 0;
-		z-index: 55;
-		display: block;
-		visibility: hidden;
-		transition: visibility 0s 0.25s;
-	}
-
-	.is-nav-open .global-nav {
-		visibility: visible;
-		transition-delay: 0s;
-	}
-
-	.global-nav__overlay {
-		position: absolute;
-		inset: 0;
-		background: rgba(38, 41, 61, 0.45);
-		opacity: 0;
-		transition: opacity 0.25s;
-	}
-
-	.is-nav-open .global-nav__overlay {
-		opacity: 1;
-	}
-
 	.global-nav__panel {
-		position: absolute;
-		top: 0;
 		left: 0;
 		right: 0;
-		max-height: 100%;
+		width: auto;
 		padding: 8px 16px 24px;
-		overflow-y: auto;
-		background: var(--white);
-		border-bottom: 3px solid var(--orange);
-		transform: translateY(-12px);
-		opacity: 0;
-		transition: transform 0.25s, opacity 0.25s;
-	}
-
-	.is-nav-open .global-nav__panel {
-		transform: none;
-		opacity: 1;
-	}
-
-	.global-nav__link {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		min-height: 52px;
-		font-size: 16px;
-		font-weight: 600;
-		color: var(--navy);
-		text-decoration: none;
-		border-bottom: 1px solid var(--line);
-	}
-
-	.global-nav__link::after {
-		content: "\203A";
-		font-size: 22px;
-		line-height: 1;
-		color: var(--orange-text);
-	}
-
-	.global-nav__label {
-		margin-top: 20px;
-		font-size: 13px;
-		font-weight: 700;
-		color: var(--orange-text);
-	}
-
-	.global-nav__cats {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 8px;
-		margin-top: 10px;
-	}
-
-	.global-nav__cat {
-		display: inline-flex;
-		align-items: center;
-		min-height: 44px;
-		padding: 0 16px;
-		font-size: 14px;
-		font-weight: 600;
-		color: var(--navy);
-		text-decoration: none;
-		background: var(--sand);
-		border-radius: 999px;
+		border-radius: 0;
+		box-shadow: none;
 	}
 
 	.is-nav-open {
 		overflow: hidden;
-	}
-
-	.is-nav-open .fab-faq {
-		opacity: 0;
-		pointer-events: none;
 	}
 
 	.container {
@@ -608,5 +639,15 @@ button {
 	.fab-faq {
 		right: 14px;
 		bottom: 14px;
+	}
+}
+
+/* ==========================================================
+   タブレット幅（960px以下）：ヘッダーのボタンが増えても、タイトルが省略されないよう、
+   FAQボタンの補足文字（よくあるご質問）だけを隠す
+   ========================================================== */
+@media (max-width: 960px) {
+	.site-header__actions .btn .pc-only {
+		display: none;
 	}
 }

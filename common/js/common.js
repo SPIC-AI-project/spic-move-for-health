@@ -21,7 +21,7 @@
 		});
 	}
 
-	/* ---------- ハンバーガーメニュー（SP） ---------- */
+	/* ---------- ハンバーガーメニュー（PC・SP共通） ---------- */
 	var root = document.documentElement;
 	var navToggle = document.getElementById('js-nav-toggle');
 	var nav = document.getElementById('js-nav');
@@ -44,9 +44,6 @@
 				setNav(false);
 				navToggle.focus();
 			}
-		});
-		window.matchMedia('(min-width: 769px)').addEventListener('change', function (e) {
-			if (e.matches) { setNav(false); }
 		});
 	}
 
