@@ -1429,13 +1429,13 @@
 	.map__scroll {
 		overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
-		padding-bottom: 1em;
 	}
 
 	.map__img {
 		width: 640px;
 		max-width: none;
 		margin-inline: 0;
+		padding-bottom: 1em;
 	}
 
 	.map__hint {
