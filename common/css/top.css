@@ -1429,7 +1429,7 @@
 	.map__scroll {
 		overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
-		padding-bottom: 0.5em;
+		padding-bottom: 1em;
 	}
 
 	.map__img {
