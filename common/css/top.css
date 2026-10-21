@@ -482,7 +482,7 @@
 
 .access__card {
 	padding: 28px;
-	background: var(--cream);
+	background: var(--white);
 	border: 1px solid var(--line);
 	border-radius: var(--radius);
 }
