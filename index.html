@@ -25,7 +25,7 @@
 <link rel="apple-touch-icon" href="common/img/apple-touch-icon.png">
 <script>document.documentElement.classList.add('js');</script>
 <link rel="stylesheet" href="common/css/templates.css?v=11">
-<link rel="stylesheet" href="common/css/top.css?v=16">
+<link rel="stylesheet" href="common/css/top.css?v=17">
 </head>
 <body>
 
@@ -379,7 +379,10 @@
 			<h2 class="h2-title">会場レイアウト</h2>
 
 			<div class="map">
-				<img class="map__img" src="common/img/layout-2.svg" alt="会場レイアウト図。展示ホールCの中に、ステージ、救護本部、クローク、受付、キッズスペース、体感ブース、色別応援ブース、お手洗いが配置されています。内容は下の一覧にも記載しています。" width="292" height="141">
+				<div class="map__scroll" tabindex="0" role="region" aria-label="会場レイアウト図（左右にスクロールできます）">
+					<img class="map__img" src="common/img/layout-2.svg" alt="会場レイアウト図。展示ホールCの中に、ステージ、救護本部、クローク、受付、キッズスペース、体感ブース、色別応援ブース、お手洗いが配置されています。内容は下の一覧にも記載しています。" width="292" height="141">
+				</div>
+				<p class="map__hint">左右にスワイプすると、図を大きく見られます。</p>
 				<!-- <div class="map__grid" role="img" aria-label="会場レイアウト図。内容は下の一覧にも記載しています。">
 					<div class="map__cell map__cell--annex">2F<br>アネックスホール</div>
 					<div class="map__cell map__cell--stage">ステージ</div>
@@ -609,10 +612,6 @@
 					<summary class="faq-item__q"><span class="faq-item__mark">Q</span><span class="faq-item__text">4色のチームはどうやって決まりますか？</span><span class="faq-item__label">当日の流れ</span><!--<span class="faq-item__tbd">確認中</span>--></summary>
 					<div class="faq-item__a"><div class="faq-item__a-body"><p>会場には、色ごとの応援ブースを設けています。<br>
 					ご招待の方のチーム分けに関しましては、当日発表する予定です。</p></div></div>
-				</details>
-				<details class="faq-item" id="q-spectating" data-cat="day">
-					<summary class="faq-item__q"><span class="faq-item__mark">Q</span><span class="faq-item__text">競技参加数がとても少ないですが、出ていない間はずっと「見ている（応援する）だけ」の時間になりますか？</span><span class="faq-item__label">当日の流れ</span></summary>
-					<div class="faq-item__a"><div class="faq-item__a-body"><p>「大玉送り」「4色玉入れ」「スピックウルトラ4択クイズ」は、全員が参加する競技です。<br>そのほかの競技は、競技ごとに出場人数が決まっています。人数は「<a href="#games">競技紹介</a>」をご確認ください。<br>出場していない時間は、チームのみなさんでの応援をお楽しみください。</p></div></div>
 				</details>
 				<details class="faq-item" id="q-after" data-cat="day">
 					<summary class="faq-item__q"><span class="faq-item__mark">Q</span><span class="faq-item__text">閉会式のあとは何かありますか？</span><span class="faq-item__label">当日の流れ</span></summary>

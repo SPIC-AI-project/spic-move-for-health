@@ -326,6 +326,10 @@
 	margin-inline: auto;
 }
 
+.map__hint {
+	display: none;
+}
+
 .map__grid {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
@@ -1415,5 +1419,30 @@
 @media (min-width: 481px) and (max-width: 1024px) {
 	.team-grid {
 		grid-template-columns: repeat(2, 50%);
+	}
+}
+
+/* ==========================================================
+   スマホ（700px以下）：会場レイアウト図を大きく表示し、左右にスワイプして見られるようにする
+   ========================================================== */
+@media (max-width: 700px) {
+	.map__scroll {
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.map__img {
+		width: 640px;
+		max-width: none;
+		margin-inline: 0;
+	}
+
+	.map__hint {
+		display: block;
+		margin-top: 8px;
+		font-size: 12px;
+		font-weight: 700;
+		text-align: center;
+		color: var(--ink-sub);
 	}
 }
