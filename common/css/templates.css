@@ -98,6 +98,10 @@ button {
 	display: none;
 }
 
+.nowrap {
+	white-space: nowrap;
+}
+
 /* ---------- header ---------- */
 .site-header {
 	position: sticky;
