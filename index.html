@@ -28,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&amp;display=swap">
 <link rel="stylesheet" href="common/css/templates.css?v=17">
-<link rel="stylesheet" href="common/css/top.css?v=22">
+<link rel="stylesheet" href="common/css/top.css?v=26">
 </head>
 <body>
 
@@ -103,8 +103,9 @@
 
 		<svg class="hero__wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 40 C 240 90 480 0 720 36 C 960 72 1200 10 1440 44 L1440 80 L0 80 Z" fill="#e98b4b"/></svg>
 		<details class="hero__update">
-			<summary class="hero__update-summary">最終更新：2026.10.23</summary>
+			<summary class="hero__update-summary">最終更新：2026.10.26</summary>
 			<ul class="hero__update-list">
+				<li>2026.10.26　チーム紹介にTシャツを追加</li>
 				<li>2026.10.23　競技紹介を更新</li>
 				<li>2026.10.22　運動会特設サイト公開</li>
 			</ul>
@@ -183,7 +184,7 @@
 		<div class="container reveal">
 			<p class="eyebrow">TEAMS</p>
 			<h2 class="h2-title">チーム紹介</h2>
-			<p class="section-lead">オレンジ・グリーン・ピンク・ブルーの4チームに分かれて対戦します。</p>
+			<p class="section-lead">オレンジ・グリーン・ピンク・ブルーの4チームに分かれて対戦します。<br>当日は、チームカラーのTシャツをお渡しします。運動会の間は、こちらをご着用ください。</p>
 		</div>
 
 		<div class="team-grid reveal">
@@ -197,6 +198,7 @@
 					<p class="team-card__key">スローガン</p>
 					<p class="team-card__val">笑顔で挑戦、笑顔で応援。</p>
 				</div>
+				<img class="team-card__shirt" src="common/img/t-orange.webp" alt="オレンジチームのTシャツ" width="1024" height="1024" loading="lazy">
 			</article>
 			<article class="team-card team-card--green">
 				<p class="team-card__color">GREEN<span class="team-card__color-en">TEAM</span></p>
@@ -208,6 +210,7 @@
 					<p class="team-card__key">スローガン</p>
 					<p class="team-card__val">満ちてる2%、勝率98%</p>
 				</div>
+				<img class="team-card__shirt" src="common/img/t-green.webp" alt="グリーンチームのTシャツ" width="1024" height="1024" loading="lazy">
 			</article>
 			<article class="team-card team-card--pink">
 				<p class="team-card__color">PINK<span class="team-card__color-en">TEAM</span></p>
@@ -220,6 +223,7 @@
 					<p class="team-card__val">ときめく&#10084;&#xFE0E;と青春</p>
 					<p class="team-card__note">掛け声：ときめきーふぁぃっ！</p>
 				</div>
+				<img class="team-card__shirt" src="common/img/t-pink.webp" alt="ピンクチームのTシャツ" width="1024" height="1024" loading="lazy">
 			</article>
 			<article class="team-card team-card--blue">
 				<p class="team-card__color">BLUE<span class="team-card__color-en">TEAM</span></p>
@@ -231,6 +235,7 @@
 					<p class="team-card__key">スローガン</p>
 					<p class="team-card__val">完全燃焼の青い炎！<br>熱い絆で一丸となる</p>
 				</div>
+				<img class="team-card__shirt" src="common/img/t-blue.webp" alt="ブルーチームのTシャツ" width="1024" height="1024" loading="lazy">
 			</article>
 		</div>
 	</section>
@@ -635,7 +640,7 @@
 				<!-- 服装・持ち物 -->
 				<details class="faq-item" id="q-wear" data-cat="wear">
 					<summary class="faq-item__q"><span class="faq-item__mark">Q</span><span class="faq-item__text">運動会の服装はどうしたらいいですか？</span><span class="faq-item__label">服装・持ち物</span></summary>
-					<div class="faq-item__a"><div class="faq-item__a-body"><p>運動に適した、動きやすい服装でお越しください。<br>運動会の間は、チームカラーのTシャツをお渡ししますので、そちらをご着用ください。</p></div></div>
+					<div class="faq-item__a"><div class="faq-item__a-body"><p>運動に適した、動きやすい服装でお越しください。<br>運動会の間は、チームカラーのTシャツをお渡ししますので、そちらをご着用ください。<br>Tシャツのデザインは「<a href="#teams">チーム紹介</a>」をご覧ください。</p></div></div>
 				</details>
 				<details class="faq-item" id="q-social-dress" data-cat="wear">
 					<summary class="faq-item__q"><span class="faq-item__mark">Q</span><span class="faq-item__text">懇親会の服装はどうしたらいいですか？</span><span class="faq-item__label">服装・持ち物</span></summary>
@@ -643,7 +648,7 @@
 				</details>
 				<details class="faq-item" id="q-belongings" data-cat="wear">
 					<summary class="faq-item__q"><span class="faq-item__mark">Q</span><span class="faq-item__text">持ち物を教えてください。</span><span class="faq-item__label">服装・持ち物</span></summary>
-					<div class="faq-item__a"><div class="faq-item__a-body"><p>運動やランニングに適した靴でお越しいただくか、ご持参ください。室内用シューズは不要です。<br>チームカラーのTシャツは、当日受付時にお渡しします。<br>お飲み物は、お水をご用意しています。そのほかをご希望の方は、各自でご持参ください。<br>貴重品は、お手元にお持ちいただき、ご自身で管理をお願いいたします。</p></div></div>
+					<div class="faq-item__a"><div class="faq-item__a-body"><p>運動やランニングに適した靴でお越しいただくか、ご持参ください。室内用シューズは不要です。<br>チームカラーのTシャツは、当日受付時にお渡しします（デザインは「<a href="#teams">チーム紹介</a>」をご覧ください）。<br>お飲み物は、お水をご用意しています。そのほかをご希望の方は、各自でご持参ください。<br>貴重品は、お手元にお持ちいただき、ご自身で管理をお願いいたします。</p></div></div>
 				</details>
 				<details class="faq-item" id="q-cloak" data-cat="wear">
 					<summary class="faq-item__q"><span class="faq-item__mark">Q</span><span class="faq-item__text">荷物は預けられますか？</span><span class="faq-item__label">服装・持ち物</span></summary>

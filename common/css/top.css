@@ -951,6 +951,17 @@
 	line-height: 1.6;
 }
 
+.team-card__shirt {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 4 / 3;
+	object-fit: contain;
+	background: var(--white);
+	margin-top: auto;
+	border-radius: 12px;
+}
+
 /* ---------- games（競技紹介） ---------- */
 .game-grid {
 	display: grid;
