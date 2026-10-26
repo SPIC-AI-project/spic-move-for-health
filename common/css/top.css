@@ -1373,6 +1373,10 @@
 		margin-top: 32px;
 	}
 
+	.team-card__shirt {
+		aspect-ratio: 16 / 10;
+	}
+
 	.team-card {
 		gap: 18px;
 		min-height: 0;
