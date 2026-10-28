@@ -195,9 +195,13 @@
 	background: var(--orange);
 }
 
-.hero__update-summary {
-	cursor: pointer;
+.hero__update-latest {
 	font-weight: 600;
+}
+
+.hero__update-summary {
+	margin-top: 4px;
+	cursor: pointer;
 }
 
 .hero__update-list {
