@@ -258,6 +258,10 @@
 	border-bottom: 0;
 }
 
+.overview-link {
+	margin-top: 20px;
+}
+
 /* ---------- schedule ---------- */
 .schedule {
 	display: grid;
