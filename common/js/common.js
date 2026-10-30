@@ -60,6 +60,9 @@
 		} else if (days === 0) {
 			countWrap.textContent = '本日開催です！';
 			countWrap.hidden = false;
+		} else {
+			countWrap.textContent = 'スピック大運動会2026は終了しました。ご参加ありがとうございました。';
+			countWrap.hidden = false;
 		}
 	}
 
